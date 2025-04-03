@@ -1,0 +1,19 @@
+.footer {
+    background-color: #0A2D47;
+    color: white;
+    padding: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer img {
+    height: 200px;
+    border-radius: 5%;
+}
+
+.bouton-footer {
+    width: 300px;
+}

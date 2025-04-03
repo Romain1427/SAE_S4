@@ -1,0 +1,39 @@
+.header {
+    background-color: rgb(12, 127, 211);
+    padding: 20px;
+}
+
+.header img {
+    height: 50px;
+    border-radius: 4%;
+}
+
+.bouton-header {
+    border: 0;
+    color: white;
+    width: 155px;
+}
+
+.bouton-header-employer {
+    border: 0;
+    color: white;
+    width: 235px;
+}
+
+.custom-dropdown-toggle::after {
+    display: none; /* Supprime la flèche par défaut de Bootstrap */
+}
+
+/* Activer l'ouverture au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Pour assurer la visibilité */
+    visibility: visible; /* Utile pour les animations */
+}
+
+/* Transition pour un effet fluide */
+.dropdown-menu {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0; /* Par défaut, le menu est invisible */
+    visibility: hidden;
+}

@@ -1,0 +1,247 @@
+/* ---------------------------------------------------------- */
+/*                          COMMUN                            */
+/*                                                            */
+/* ---------------------------------------------------------- */
+
+body {
+    background-image: url(../img/fond-neutral.png);
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.erreur {
+    color: #da3636;
+}
+
+/* Ajoute un padding entre le header et le contenu de page */
+.padding-header {
+    padding-top: 120px;
+}
+
+.full-screen {
+    min-height: 100vh;
+}
+
+/* ---------------------------------------------------------- */
+/*                 Pages d'authentification                   */
+/*                                                            */
+/* ---------------------------------------------------------- */
+
+/* faire apparaître le footer sur la page */
+.auth-row {
+    min-height: calc(100vh - 330px);
+}
+.auth-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------- */
+/*                      Pages d'accueil                       */
+/*                                                            */
+/* ---------------------------------------------------------- */
+
+.acc-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------- */
+/*                          BOUTONS                           */
+/*                      Tous les boutons                      */
+/* ---------------------------------------------------------- */
+
+.btn-reset {
+    width: 200%; /* Rend le bouton aussi large que les filtres */
+    border-radius: 7px;
+    text-align: center;
+    padding: 0;
+    background-color: rgb(12,127,211);
+    height: 38px;
+}
+
+.btn-bleu {
+    margin-left : auto;
+    background-color: rgb(12,127,211);
+}
+
+.btn-modifier {
+    background-color: rgb(12,127,211);
+}
+
+/* Bouton de suppression */
+.btn-suppr {
+    background-color: #da3636;
+    border-color: #da3636;
+}
+.btn-suppr:hover {
+    background-color: #da3636;
+    box-shadow: 0 0 30px 5px #da3636;
+}
+
+.btn-colonne {
+    width: 10%;
+    text-align: center; /* Centre les icônes */
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 150px;
+    left: 20px;
+    display: none; /* Cacher le bouton au début */
+    z-index: 1000; /* Au-dessus des autres éléments */
+    font-size: 24px; /* Taille de l'icône */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* ---------------------------------------------------------- */
+/*                      Pages d'affichage                     */
+/*                 Media queries pour les filtres             */
+/* ---------------------------------------------------------- */
+
+@media (min-width: 992px) {
+    .col-grand-reservation {
+        flex: 0 0 auto; /* Permet de limiter la largeur de la colonne */
+        width: 145px;   /* Largeur personnalisée */
+    }
+
+    .col-grand-salle {
+        flex: 0 0 auto; /* Permet de limiter la largeur de la colonne */
+        width: 140px;   /* Largeur personnalisée */
+    }
+
+    .col-reduit-reservation {
+        flex: 0 0 auto;
+        width: 200px;   /* Largeur réduite des colonnes sur grands écrans */
+    }
+
+    .col-reduit-salle {
+        flex: 0 0 auto;
+        width: 175px;   /* Largeur réduite des colonnes sur grands écrans */
+    }
+}
+
+/* ---------------------------------------------------------- */
+/*                       RESERVATION                          */
+/*                                                            */
+/* ---------------------------------------------------------- */
+
+.petite-taille {
+    font-size: 15px;
+}
+
+.info-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 5px; /* Espacement entre l'icône et le texte */
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%; /* Positionnez au-dessus de l'icône */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.info-icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ---------------------------------------------------------- */
+/*                        IMPORTÉ                             */
+/*                     From Uiverse.io                        */
+/* ---------------------------------------------------------- */
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
