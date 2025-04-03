@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.connexion.MainActivity"
+    android:stretchColumns="2">
+    <TableRow> <!-- TODO : Refact les données dans les fichiers ressources (dimens.xml, etc...)-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_span="5"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/titre_app_connexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_span="3"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="100dp"
+        android:gravity="center">
+        <ImageView android:src="@drawable/headicon"
+            android:layout_height="40dp"
+            android:layout_width="10dp"/>
+        <TextView android:textSize="22sp"
+            android:text="@string/nom_login"/>
+    </TableRow>
+    <TableRow>
+        <EditText android:layout_marginTop="20dp"
+            android:id="@+id/login"
+            android:layout_span="3"
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_marginStart="@dimen/huge_padding"
+            android:layout_marginEnd="@dimen/huge_padding"
+            android:hint="@string/indic_login"/>
+    </TableRow>
+    <TableRow android:layout_marginTop="60dp"
+        android:gravity="center">
+        <ImageView android:src="@drawable/lock"
+            android:layout_height="40dp"
+            android:layout_width="40dp"/>
+        <TextView android:textSize="22sp"
+            android:text="@string/nom_mdp"/>
+    </TableRow>
+    <TableRow>
+        <EditText android:layout_marginTop="20dp"
+            android:id="@+id/mdp"
+            android:inputType="textPassword"
+            android:layout_marginStart="@dimen/huge_padding"
+            android:layout_marginEnd="@dimen/huge_padding"
+            android:hint="@string/indic_mdp"
+            android:gravity="center"
+            android:layout_span="3"
+            android:layout_marginBottom="100dp"
+
+            />
+    </TableRow>
+    <TextView
+        android:id="@+id/connexion_error_msg"
+        android:text="@string/wrong_login_password"
+        android:visibility="invisible"
+        style="@style/error_message"/>
+    <TableRow android:layout_weight="0">
+        <Button android:text="Se connecter"
+            android:id="@+id/btnConnexion"
+            android:layout_span="3"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            ></Button>
+    </TableRow>
+</TableLayout>

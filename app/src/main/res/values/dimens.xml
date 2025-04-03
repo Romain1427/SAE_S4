@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_text">13sp</dimen>
+    <dimen name="medium_text">18sp</dimen>
+    <dimen name="huge_padding">30dp</dimen>
+    <dimen name="big_txt_size">26sp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="spaced_item">30dp</dimen>
+    <dimen name="detail_txt">26sp</dimen>
+    <dimen name="huge_spacing">200dp</dimen>
+</resources>

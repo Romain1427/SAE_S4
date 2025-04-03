@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/incident_title"
+        style="@style/title"
+        android:text="@string/incident_title"/>
+    <TableRow>
+
+        <TextView
+            android:layout_width="105dp"
+            android:text="Résumé : "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/incident_summary"
+            android:textSize="@dimen/medium_text"
+            android:maxLength="50"
+            android:maxLines="4"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TextView android:id="@+id/summary_not_filled"
+        style="@style/error_message"
+        android:text="@string/summary_not_filled"/>
+
+    <TableRow>
+        <TextView
+            android:text="@string/description_report"
+            android:textSize="20sp"/>
+    </TableRow>
+    <EditText
+        android:id="@+id/incident_desc"
+        style="@style/textArea"
+        android:textSize="@dimen/medium_text"
+        android:background="@drawable/simple_border"
+        />
+
+    <TableRow>
+        <TextView
+            android:text="@string/txt_report_severity"
+            android:textSize="20sp"
+            android:layout_span="2"/>
+        <Spinner
+            android:id="@+id/spinner_report_severity"
+            />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/severity_desc"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/medium_text"/>
+
+    <TextView
+        android:text="@string/question_contact_it"
+        android:layout_marginTop="@dimen/spaced_item"
+        style="@style/centered_medium_text"/>
+
+    <RadioGroup android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/radiogroup_contact_it">
+        <RadioButton
+            android:id="@+id/contact_it_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oui"
+
+            android:layout_marginEnd="100dp"/>
+
+        <RadioButton
+            android:id="@+id/contact_it_no"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non"/>
+    </RadioGroup>
+    <TableRow android:layout_marginTop="50dp">
+        <Button android:text="Retour" android:id="@+id/back_to_resa_list"/>
+        <Button android:text="Envoyer"
+            android:id="@+id/send_report"
+            android:layout_column="2"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Incidandroid</string>
+    <string name="titre_app_connexion">Bienvenue sur IncidAndroid !</string>
+    <string name="nom_login">Identifiant</string>
+    <string name="nom_mdp">Mot de passe</string>
+    <string name="indic_login">Saisissez votre identifiant</string>
+    <string name="indic_mdp">Saisissez votre mot de passe</string>
+    <string name="wrong_login_password">"L'identifiant ou le mot de passe est incorrect"</string>
+    <string name="incident_title">"Incident sur la réservation du %s"</string>
+    <string name="no_reservation_msg">"Il n'y a pas de réservation associée à votre compte !"</string>
+    <string name="no_reports_msg">"Il n'y a pas de signalement associé à votre compte !"</string>
+    <string name="description_report">Description :</string>
+    <string name="desc_report_severity">"Cette évaluation de l'impact sur la salle revient à dire :\n ' %s '"</string>
+    <string name="txt_report_severity">Impact sur la salle :</string>
+    <string name="question_contact_it">Souhaitez-vous être contacté par le service informatique ?</string>
+    <string name="report_confirmation_msg">Le signalement a bien été pris en compte</string>
+    <string name="reservation_name_report">Réservation du %s de %s à %s | %s | %s</string>
+    <string name="detail_reservant">Réservant :</string>
+    <string name="detail_date">Date :</string>
+    <string name="detail_time">Créneau :</string>
+    <string name="detail_room">Salle :</string>
+    <string name="detail_activity">Activité :</string>
+    <string name="no_reports_on_reservation">Il n\'y a pas de rapports d\'incidents sur cette réservation !</string>
+    <string name="type_report_severity">"Type : "</string>
+    <string name="summary_not_filled">Veuillez saisir un résumé du problème rencontré</string>
+    <string name="report_loading_msg">Chargement des rapports d\'incident ...</string>
+    <string name="confirm_report_deletion_title">Confirmation de suppression</string>
+    <string name="confirm_report_deletion_desc">Voulez-vous vraiment supprimer ce rapport d\'incident ?</string>
+    <string name="report_deletion_succes_msg">Rapport supprimé avec succès !</string>
+    <string name="report_modification_success_msg">Le signalement a bien été modifié</string>
+</resources>

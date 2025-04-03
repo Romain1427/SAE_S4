@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TableRow android:layout_marginBottom="@dimen/small_margin">
+        <TextView
+            android:text="@string/detail_reservant"
+            android:textSize="@dimen/detail_txt" />
+        <TextView
+            android:id="@+id/detail_reservant"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/medium_text" />
+
+    </TableRow>
+    <TableRow android:layout_marginBottom="@dimen/small_margin">
+        <TextView android:text="@string/detail_date"
+            android:textSize="@dimen/detail_txt" />
+        <TextView
+            android:id="@+id/detail_date"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/medium_text" />
+    </TableRow>
+    <TableRow android:layout_marginBottom="@dimen/small_margin">
+        <TextView android:text="@string/detail_time"
+            android:textSize="@dimen/detail_txt" />
+        <TextView
+            android:id="@+id/detail_time"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/medium_text" />
+    </TableRow>
+    <TableRow android:layout_marginBottom="@dimen/small_margin">
+        <TextView android:text="@string/detail_room"
+            android:textSize="@dimen/detail_txt" />
+        <TextView
+            android:id="@+id/detail_room"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/medium_text" />
+    </TableRow>
+    <TableRow android:layout_marginBottom="@dimen/small_margin">
+        <TextView android:text="@string/detail_activity"
+            android:textSize="@dimen/detail_txt" />
+        <TextView
+            android:id="@+id/detail_activity"
+            android:paddingStart="10dp"
+            android:textSize="@dimen/medium_text" />
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="4dp"
+        android:background="#5A5A5A" />
+    <TextView android:id="@+id/msg_erreur"
+        style="@style/no_reservations_msg"/>
+    <TableLayout
+        android:id="@+id/loadingPanelDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/loadingText"
+            style="@style/TextAppearance.Material3.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/huge_padding"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/reservation_reports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+</TableLayout>

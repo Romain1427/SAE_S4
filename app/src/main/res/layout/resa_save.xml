@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.connexion.MainActivity"
+    android:stretchColumns="2">
+    <TableRow> <!-- TODO : Refact les données dans les fichiers ressources (dimens.xml, etc...)-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_span="5"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/titre_app_connexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_span="3"/>
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:textSize="20sp" />
+</TableLayout>
